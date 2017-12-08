@@ -1,0 +1,165 @@
+body {
+    height: 100%;
+    /*[2] SAO Ordinal Scale Backgrounds. (2017). [image] Available at: http://imgur.com/gallery/ZI8Cy [Accessed 19 May 2017].*/
+    background: url("../images/main.jpg") no-repeat fixed top;
+}
+
+/*Global Navigation Bar*/
+.navigation {
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    z-index: 1;
+}
+
+.navigation a, .dropbtn {
+    border-top: 3px solid rgba(255, 0, 0, 0);
+    opacity: 0;
+    display: inline-block;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.setting {
+    position: relative;
+    display: inline-block;
+}
+
+.navigation a:hover {
+    border-top-color: yellow;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(255,255,255,0.2);
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    font-size: 15px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(255,255,255,0.4);
+}
+
+.setting:hover .dropdown-content {
+    display: block;
+}
+
+/*Main*/
+.main .main-line-01 {
+    position: absolute;
+    opacity: 1;
+    z-index: 0;
+
+    top: 0;
+    left: 220px;
+}
+
+.main .main-line-02 {
+    position: absolute;
+    opacity: 1;
+    z-index: 0;
+
+    bottom: 0;
+    left: 0;
+}
+
+.main .main-line-03 {
+    position: absolute;
+    opacity: 1;
+    z-index: 0;
+
+    bottom: 0;
+    right: 0;
+}
+
+.main-catch {
+    position: absolute;
+    z-index: 0;
+}
+
+.main-catch-left {
+    opacity: 0;
+    top: -30px;
+    left: -30px;
+}
+
+.main-catch-right {
+    opacity: 0;
+    top: 0;
+    right: 60px;
+}
+
+/*Reading Button*/
+/*[16] W3schools.com. (2017). Tryit Editor v3.5. [online] Available at: https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_animate1 [Accessed 19 May 2017].*/
+.reading {
+    opacity: 0;
+}
+
+.reading-button {
+    position: fixed;
+    height: 50px;
+    display: block;
+    z-index: 10000;
+    bottom: 5%;
+    left: 47%;
+    border-radius: 4px;
+    background-color: aqua;
+    border: none;
+    color: #111111;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.reading-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.reading-button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.reading-button:hover span {
+    padding-right: 25px;
+}
+
+.reading-button:hover span:after {
+    opacity: 0.7;
+    right: 0;
+}
+
+
+
+
+
+
+
+
